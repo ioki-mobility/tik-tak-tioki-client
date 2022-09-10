@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://tik-tak-tioki.fly.dev/api/game?player_token=TOKEN
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 779cffc7-b5f5-4e31-9a05-11e632150156
+      X-Runtime:
+      - '0.068268'
+      Vary:
+      - Origin
+      Transfer-Encoding:
+      - chunked
+      Fly-Cache-Status:
+      - MISS
+      Date:
+      - Sat, 10 Sep 2022 16:03:30 GMT
+      Server:
+      - Fly/45b85f07 (2022-09-06)
+      Via:
+      - 1.1 fly.io
+      Fly-Request-Id:
+      - 01GCM28JHFA8HHJ7ZGJ2S3PS8A-fra
+    body:
+      encoding: ASCII-8BIT
+      string: '{"error":"No valid player_token provided"}'
+  recorded_at: Sat, 10 Sep 2022 16:03:30 GMT
+recorded_with: VCR 6.1.0

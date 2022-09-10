@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://tik-tak-tioki.fly.dev/api/join
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"81d2042932f81912714b8fbe67f3dfb7"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 98ed6751-6c3f-4a0c-a3e2-711f93ddf41b
+      X-Runtime:
+      - '0.008454'
+      Vary:
+      - Origin
+      Transfer-Encoding:
+      - chunked
+      Fly-Cache-Status:
+      - MISS
+      Date:
+      - Sun, 21 Aug 2022 10:58:14 GMT
+      Server:
+      - Fly/9616de23 (2022-08-21)
+      Via:
+      - 1.1 fly.io
+      Fly-Request-Id:
+      - 01GB00V85D4HZ1FB476Z84XM4R-fra
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"name":"possible-bangle-7225","created_at":"2022-08-21T10:58:06.893Z"},{"name":"various-copy-6557","created_at":"2022-08-21T10:58:05.146Z"},{"name":"rainy-joke-7520","created_at":"2022-08-21T10:58:03.131Z"}]'
+  recorded_at: Sun, 21 Aug 2022 10:58:15 GMT
+recorded_with: VCR 6.1.0

@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://tik-tak-tioki.fly.dev/api/join
+    body:
+      encoding: UTF-8
+      string: '{"name":"sharp-fog-8700"}'
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"e60ad4acf7332b1a33463cb00b56b5ab"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 455fbfa9-1766-44d6-83ad-4e6c29a154ea
+      X-Runtime:
+      - '0.015573'
+      Vary:
+      - Origin
+      Transfer-Encoding:
+      - chunked
+      Fly-Cache-Status:
+      - MISS
+      Date:
+      - Sun, 21 Aug 2022 10:54:17 GMT
+      Server:
+      - Fly/9616de23 (2022-08-21)
+      Via:
+      - 1.1 fly.io
+      Fly-Request-Id:
+      - 01GB00M12T375QBTQ7X7K47E1G-fra
+    body:
+      encoding: ASCII-8BIT
+      string: '{"name":"sharp-fog-8700","state":"your_turn","board":["f","f","f","f","f","f","f","f","f"],"player_token":"CVSwokdeLRfTgqebpSKjQC3y","player_role":"o","next_move_token":"fLNmQzSfVtT7eiCgP6DkJ9Lx","created_at":"2022-08-21T10:54:18.059Z","updated_at":"2022-08-21T10:54:18.214Z"}'
+  recorded_at: Sun, 21 Aug 2022 10:54:18 GMT
+recorded_with: VCR 6.1.0
